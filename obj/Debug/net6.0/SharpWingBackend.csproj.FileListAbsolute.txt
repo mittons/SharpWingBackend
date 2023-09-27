@@ -1,0 +1,15 @@
+F:\Pet projects\SharpWingTasks\back\SharpWingBackend\bin\Debug\net6.0\SharpWingBackend.exe
+F:\Pet projects\SharpWingTasks\back\SharpWingBackend\bin\Debug\net6.0\SharpWingBackend.deps.json
+F:\Pet projects\SharpWingTasks\back\SharpWingBackend\bin\Debug\net6.0\SharpWingBackend.runtimeconfig.json
+F:\Pet projects\SharpWingTasks\back\SharpWingBackend\bin\Debug\net6.0\SharpWingBackend.dll
+F:\Pet projects\SharpWingTasks\back\SharpWingBackend\bin\Debug\net6.0\SharpWingBackend.pdb
+F:\Pet projects\SharpWingTasks\back\SharpWingBackend\obj\Debug\net6.0\SharpWingBackend.csproj.AssemblyReference.cache
+F:\Pet projects\SharpWingTasks\back\SharpWingBackend\obj\Debug\net6.0\SharpWingBackend.GeneratedMSBuildEditorConfig.editorconfig
+F:\Pet projects\SharpWingTasks\back\SharpWingBackend\obj\Debug\net6.0\SharpWingBackend.AssemblyInfoInputs.cache
+F:\Pet projects\SharpWingTasks\back\SharpWingBackend\obj\Debug\net6.0\SharpWingBackend.AssemblyInfo.cs
+F:\Pet projects\SharpWingTasks\back\SharpWingBackend\obj\Debug\net6.0\SharpWingBackend.csproj.CoreCompileInputs.cache
+F:\Pet projects\SharpWingTasks\back\SharpWingBackend\obj\Debug\net6.0\SharpWingBackend.dll
+F:\Pet projects\SharpWingTasks\back\SharpWingBackend\obj\Debug\net6.0\refint\SharpWingBackend.dll
+F:\Pet projects\SharpWingTasks\back\SharpWingBackend\obj\Debug\net6.0\SharpWingBackend.pdb
+F:\Pet projects\SharpWingTasks\back\SharpWingBackend\obj\Debug\net6.0\SharpWingBackend.genruntimeconfig.cache
+F:\Pet projects\SharpWingTasks\back\SharpWingBackend\obj\Debug\net6.0\ref\SharpWingBackend.dll
