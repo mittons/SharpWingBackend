@@ -12,9 +12,8 @@ public class MockDatabase : IDatabase
                 TaskName = "Mock Task 1",
                 Description = "This is a mock task",
                 CreatedDate = DateTime.Now,
-                DueDate = DateTime.Now.AddDays(7),
                 Status = "completed",
-                Priority = "High"
+                TaskLifecycleType = "Setup"
             },
             new Task
             {
@@ -22,9 +21,8 @@ public class MockDatabase : IDatabase
                 TaskName = "Mock Task 2",
                 Description = "Another mock task",
                 CreatedDate = DateTime.Now,
-                DueDate = DateTime.Now.AddDays(5),
                 Status = "not completed",
-                Priority = "Medium"
+                TaskLifecycleType = "Recurring"
             },
             new Task
             {
@@ -32,9 +30,53 @@ public class MockDatabase : IDatabase
                 TaskName = "Mock Task 3",
                 Description = "Yet another mock task",
                 CreatedDate = DateTime.Now,
-                DueDate = DateTime.Now.AddDays(10),
                 Status = "completed",
-                Priority = "Low"
+                TaskLifecycleType = "Closure"
+            },
+            new Task
+            {
+                TaskId = 4,
+                TaskName = "Mock Task 4",
+                Description = "Where do these mock tasks appear from?",
+                CreatedDate = DateTime.Now,
+                Status = "completed",
+                TaskLifecycleType = "AdHoc"
+            },
+            new Task
+            {
+                TaskId = 5,
+                TaskName = "Mock Task 5",
+                Description = "Here is another mock task",
+                CreatedDate = DateTime.Now,
+                Status = "not completed",
+                TaskLifecycleType = "Setup"
+            },
+            new Task
+            {
+                TaskId = 6,
+                TaskName = "Mock Task 6",
+                Description = "Mock tasks from outer space!",
+                CreatedDate = DateTime.Now,
+                Status = "completed",
+                TaskLifecycleType = "Recurring"
+            },
+            new Task
+            {
+                TaskId = 7,
+                TaskName = "Mock Task 7",
+                Description = "This is just a mock task, dont worry.",
+                CreatedDate = DateTime.Now,
+                Status = "not completed",
+                TaskLifecycleType = "Closure"
+            },
+            new Task
+            {
+                TaskId = 8,
+                TaskName = "Mock Task 8",
+                Description = "Is this a mock task? Is it a task? Is it? Is anything? Help, I am trapped in the mock twilight zone!",
+                CreatedDate = DateTime.Now,
+                Status = "not completed",
+                TaskLifecycleType = "AdHoc"
             }
         };
 
@@ -65,9 +107,8 @@ public class MockDatabase : IDatabase
             // Update the existing task with the new values
             existingTask.TaskName = updatedTask.TaskName;
             existingTask.Description = updatedTask.Description;
-            existingTask.DueDate = updatedTask.DueDate;
             existingTask.Status = updatedTask.Status;
-            existingTask.Priority = updatedTask.Priority;
+            existingTask.TaskLifecycleType = updatedTask.TaskLifecycleType;
         }
     }
 
