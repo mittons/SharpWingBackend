@@ -20,8 +20,9 @@ namespace TaskManagementBackend
         {
             services.AddControllers();
             
-            // Register TaskService as a scoped service
-            services.AddSingleton<TaskService>();
+            services.AddSingleton<IDatabase, MockDatabase>();
+            
+            services.AddScoped<TaskService>();
 
             services.AddCors(options =>
             {
