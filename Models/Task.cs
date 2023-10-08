@@ -9,5 +9,13 @@ public class Task
     public string? Description { get; set; }
     public DateTime CreatedDate { get; set; }
     public string? Status { get; set; }
-    public string? TaskLifecycleType { get; set; }
+    public TaskLifecycleType? TaskLifecycleType { get; set; }
+}
+
+public enum TaskLifecycleType
+{
+    Setup,
+    Recurring,
+    Closure,
+    AdHoc
 }

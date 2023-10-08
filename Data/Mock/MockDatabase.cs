@@ -13,7 +13,7 @@ public class MockDatabase : IDatabase
                 Description = "This is a mock task",
                 CreatedDate = DateTime.Now,
                 Status = "completed",
-                TaskLifecycleType = "Setup"
+                TaskLifecycleType = TaskLifecycleType.Setup
             },
             new Task
             {
@@ -22,7 +22,7 @@ public class MockDatabase : IDatabase
                 Description = "Another mock task",
                 CreatedDate = DateTime.Now,
                 Status = "not completed",
-                TaskLifecycleType = "Recurring"
+                TaskLifecycleType = TaskLifecycleType.Recurring
             },
             new Task
             {
@@ -31,7 +31,7 @@ public class MockDatabase : IDatabase
                 Description = "Yet another mock task",
                 CreatedDate = DateTime.Now,
                 Status = "completed",
-                TaskLifecycleType = "Closure"
+                TaskLifecycleType = TaskLifecycleType.Closure
             },
             new Task
             {
@@ -40,7 +40,7 @@ public class MockDatabase : IDatabase
                 Description = "Where do these mock tasks appear from?",
                 CreatedDate = DateTime.Now,
                 Status = "completed",
-                TaskLifecycleType = "AdHoc"
+                TaskLifecycleType = TaskLifecycleType.AdHoc
             },
             new Task
             {
@@ -49,7 +49,7 @@ public class MockDatabase : IDatabase
                 Description = "Here is another mock task",
                 CreatedDate = DateTime.Now,
                 Status = "not completed",
-                TaskLifecycleType = "Setup"
+                TaskLifecycleType = TaskLifecycleType.Setup
             },
             new Task
             {
@@ -58,7 +58,7 @@ public class MockDatabase : IDatabase
                 Description = "Mock tasks from outer space!",
                 CreatedDate = DateTime.Now,
                 Status = "completed",
-                TaskLifecycleType = "Recurring"
+                TaskLifecycleType = TaskLifecycleType.Recurring
             },
             new Task
             {
@@ -67,7 +67,7 @@ public class MockDatabase : IDatabase
                 Description = "This is just a mock task, dont worry.",
                 CreatedDate = DateTime.Now,
                 Status = "not completed",
-                TaskLifecycleType = "Closure"
+                TaskLifecycleType = TaskLifecycleType.Closure
             },
             new Task
             {
@@ -76,7 +76,7 @@ public class MockDatabase : IDatabase
                 Description = "Is this a mock task? Is it a task? Is it? Is anything? Help, I am trapped in the mock twilight zone!",
                 CreatedDate = DateTime.Now,
                 Status = "not completed",
-                TaskLifecycleType = "AdHoc"
+                TaskLifecycleType = TaskLifecycleType.AdHoc
             }
         };
 
