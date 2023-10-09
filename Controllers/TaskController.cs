@@ -35,6 +35,37 @@ namespace TaskManagementBackend.Controllers
             return Ok(task);
         }
 
+        [HttpGet("root")]
+        public ActionResult<Task> GetRootTask()
+        {
+            try
+            {
+                var rootTask = _taskService.GetRootTask();
+                return Ok(rootTask);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message); // or any other error handling you prefer
+            }
+        }
+
+
+        [HttpGet("{taskId}/details")]
+        public ActionResult<TaskDetailsResponse> GetTaskDetails(int taskId)
+        {
+            try
+            {
+                var taskDetails = _taskService.GetTaskDetails(taskId);
+                return Ok(taskDetails);
+            }
+            catch (Exception ex)
+            {
+                // Here, I'm assuming any exception thrown is due to the task not being found.
+                // In a real-world scenario, we'd likely want more specific error handling.
+                return NotFound(ex.Message);
+            }
+        }
+
         [HttpPost]
         public ActionResult<Task> AddTask(Task task)
         {

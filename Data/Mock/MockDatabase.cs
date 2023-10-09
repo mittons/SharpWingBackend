@@ -8,7 +8,18 @@ public class MockDatabase : IDatabase
         {
             new Task
             {
+                TaskId = 0,
+                ParentId = null,
+                TaskName = "Home",
+                Description = "",
+                CreatedDate = DateTime.Now,
+                Status = "not completed",
+                TaskLifecycleType = TaskLifecycleType.Recurring
+            },
+            new Task
+            {
                 TaskId = 1,
+                ParentId = 0,
                 TaskName = "Mock Task 1",
                 Description = "This is a mock task",
                 CreatedDate = DateTime.Now,
@@ -18,6 +29,7 @@ public class MockDatabase : IDatabase
             new Task
             {
                 TaskId = 2,
+                ParentId = 0,
                 TaskName = "Mock Task 2",
                 Description = "Another mock task",
                 CreatedDate = DateTime.Now,
@@ -27,6 +39,7 @@ public class MockDatabase : IDatabase
             new Task
             {
                 TaskId = 3,
+                ParentId = 0,
                 TaskName = "Mock Task 3",
                 Description = "Yet another mock task",
                 CreatedDate = DateTime.Now,
@@ -36,6 +49,7 @@ public class MockDatabase : IDatabase
             new Task
             {
                 TaskId = 4,
+                ParentId = 0,
                 TaskName = "Mock Task 4",
                 Description = "Where do these mock tasks appear from?",
                 CreatedDate = DateTime.Now,
@@ -45,6 +59,7 @@ public class MockDatabase : IDatabase
             new Task
             {
                 TaskId = 5,
+                ParentId = 0,
                 TaskName = "Mock Task 5",
                 Description = "Here is another mock task",
                 CreatedDate = DateTime.Now,
@@ -54,6 +69,7 @@ public class MockDatabase : IDatabase
             new Task
             {
                 TaskId = 6,
+                ParentId = 0,
                 TaskName = "Mock Task 6",
                 Description = "Mock tasks from outer space!",
                 CreatedDate = DateTime.Now,
@@ -63,6 +79,7 @@ public class MockDatabase : IDatabase
             new Task
             {
                 TaskId = 7,
+                ParentId = 0,
                 TaskName = "Mock Task 7",
                 Description = "This is just a mock task, dont worry.",
                 CreatedDate = DateTime.Now,
@@ -72,6 +89,7 @@ public class MockDatabase : IDatabase
             new Task
             {
                 TaskId = 8,
+                ParentId = 0,
                 TaskName = "Mock Task 8",
                 Description = "Is this a mock task? Is it a task? Is it? Is anything? Help, I am trapped in the mock twilight zone!",
                 CreatedDate = DateTime.Now,
@@ -109,6 +127,9 @@ public class MockDatabase : IDatabase
             existingTask.Description = updatedTask.Description;
             existingTask.Status = updatedTask.Status;
             existingTask.TaskLifecycleType = updatedTask.TaskLifecycleType;
+
+            // Do not update parentId (no functionality implemented that allows for changes in task hierarchy):
+            // existingTask.ParentId = updatedTask.ParentId;
         }
     }
 
