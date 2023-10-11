@@ -15,6 +15,10 @@ namespace TaskManagementBackend
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    
+                    var port = Environment.GetEnvironmentVariable("PORT") ?? "5000"; // Default to 5000 if PORT isn't set
+
+                    webBuilder.UseUrls($"http://*:{port}");
                 });
     }
 }
